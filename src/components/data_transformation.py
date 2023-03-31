@@ -16,8 +16,12 @@ from dataclasses import dataclass
 class DataTransformationConfig:
     preprocessor_obj_file = os.path.join('artifact','preprocessor.pkl')
 
+
 class DataTransformation:
     def __init__(self):
+        self.data_transformation_config = DataTransformationConfig()
+
+    def get_data_transformation_object(self):
         """
         this will be responsible for data transformation
         """
@@ -92,3 +96,6 @@ class DataTransformation:
             )
         except Exception as e:
             raise CustomException(e,sys)
+
+
+        
