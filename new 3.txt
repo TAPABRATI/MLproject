@@ -1,6 +1,0 @@
-Logger.py - maintaining the record and till where our file is executed if we have some error or code status
-Exception.py - to know in which file and which line we have error.
-data_ingestion - reading the data, split the train test and save files(data.csv, train.csv, test.csv) into a folder
-utils.py - here is the code for saving the file, those methods which are most useful, application purpose, check acuuracy
-Numerical pipeline- see the missing value and then do standardscaler
-Categorical pipeline- check the missing values, turn into numerical valueand then do standardscaler
